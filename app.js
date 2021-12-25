@@ -51,10 +51,11 @@ const Question = [
     },
 ]
 let index = 0;
+let answers = $('.answers');
 
 //Start the game
 $('#start').click(function() {
-    $('button').hide();
+    $('#start').hide();
     seeQuestion();
     suggestion();
 });
@@ -67,14 +68,15 @@ function seeQuestion () {
     }
 }
 
-//Create Checkbox for choose the answers
+//Create button for the answers
 
 function suggestion () {
     for (let element of Question) {
-        $('#answer').text(Question[index].choicesAnswer);
+        answers.text(Question[index].choicesAnswer[index]);
         console.log("tyu");
     }
-    //créer les réponses sous formes de boutons
+    //Compare the answers of user at the data base
+
 }
 
 //Verify if the answer is correct
