@@ -71,25 +71,19 @@ function seeQuestion () {
 //Create button for the answers
 
 function suggestion () {
-    for (let element of Question) {
-        answers.text(Question[index].choicesAnswer[index]);
+    for (let i = 0; i < Question.length; i++ )  {
+        answers.text(Question[index].choicesAnswer);
         console.log("tyu");
     }
-    //Compare the answers of user at the data base
-
+    answers.click(function (){
+// Verify if the answer is correct
+        let score = $('#score');
+        let point = 0;
+        if ( Question[index].choicesAnswer === Question.answer) {
+            score.innerHTML = point++;
+            console.log("aze")
+        }
+    });
 }
 
-//Verify if the answer is correct
-// function correct(){
-//     let score = $('#score');
-//     let point = 0;
-//     checkBox();
-//     if ( Question.answer === Question.choicesAnswer[index]) {
-//         score.innerHTML = point++;
-//         console.log("aze")
-//     }
-// }
-
-
-//créer une fonction pour passer à la suivante avec un bouton aussi (plus simple).
 // créer la fenêtre de récap :D
