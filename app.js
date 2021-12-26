@@ -52,12 +52,18 @@ const Question = [
 ]
 let index = 0;
 let answers = $('.answers');
+let choices = $('#choices');
+let scoreAll = $('#scoreAll');
+//hide the elements of questions
+choices.hide();
+scoreAll.hide();
 
 //Start the game
 $('#start').click(function() {
     $('#start').hide();
+    choices.show();
+    scoreAll.show();
     seeQuestion();
-    suggestion();
 });
 
 //See the questions in HTML
@@ -70,20 +76,23 @@ function seeQuestion () {
 
 //Create button for the answers
 
-function suggestion () {
-    for (let i = 0; i < Question.length; i++ )  {
-        answers.text(Question[index].choicesAnswer);
-        console.log("tyu");
-    }
-    answers.click(function (){
-// Verify if the answer is correct
-        let score = $('#score');
-        let point = 0;
-        if ( Question[index].choicesAnswer === Question.answer) {
-            score.innerHTML = point++;
-            console.log("aze")
-        }
-    });
-}
+Question[index].choicesAnswer.forEach(function (){
+    answers.text(Question[index].choicesAnswer);
+    console.log("tyu");
+})
 
+answers.click(function (){
+// Verify if the answer is correct
+    let score = $('#score');
+    let point = 0;
+    if (Question.answer=== Question[index].choicesAnswer.index) {
+        score.text(point++);
+        console.log("aze")
+    }
+    //go to the next question
+    this.Question[index].question++;
+    console.log('test click');
+});
 // créer la fenêtre de récap :D
+
+console.log(Question)
