@@ -55,28 +55,35 @@ let index = 0;
 let answers = document.getElementsByClassName('answers');
 let choices = $('#choices');
 let scoreAll = $('#scoreAll');
+let quiz = $('#quiz');
 let point = 0;
 let score = $('#score');
 
 //hide the elements of questions
 choices.hide();
 scoreAll.hide();
+quiz.hide();
+$('#allAnswers').hide();
 
 //Start the game
 $('#start').click(function() {
     $('#start').hide();
+    $('#text').hide();
+    quiz.show();
     choices.show();
     scoreAll.show();
-    $('.modal').hide();
     seeQuestion(index);
-    summary();
 });
 
 //See the questions in HTML
 function seeQuestion (next) {
     for (let element of Question) {
-    $('#quiz').text(Question[next].question);
-
+    quiz.text(Question[next].question);
+    // if (Question[next].question === 10) {
+    //     alert('fin du quiz')
+    //     console.log('fin du quiz')
+    //     return;
+    // }
         //Create button for the answers
         for (let i = 0; i < answers.length; i++) {
             answers[i].innerHTML = (Question[index].choicesAnswer[i]);
@@ -89,11 +96,9 @@ for (let i = 0; i < answers.length; i++) {
 // Verify if the answer is correct
         if ( Question[index].answer === i) {
             score.text(point +=1);
-            console.log(point);
         }
         //go to the next question
         index++;
         seeQuestion(index);
     });
 }
-

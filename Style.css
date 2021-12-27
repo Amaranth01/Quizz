@@ -8,7 +8,78 @@ html {
     font-size: 65.5%;
 }
 
-#checked{
-    visibility: hidden;
+body {
+    background-image: url("f.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    width: 60%;
+    text-align: center;
+    margin-top: 1rem;
+    color: rgb(135, 67, 215);
+    background-color: rgba(0, 0, 0, 0.71);
+    padding: 0.5rem;
+}
+
+#text {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-left: 6vw;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.71);
+    color: rgb(135, 67, 215);
+}
+
+#start {
+    margin-top: 5rem;
+}
+
+#quiz {
+    margin-top: 2rem;
+    margin-left: 7rem;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.71);
+    color: rgb(135, 67, 215);;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+#choices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.answers {
+    width: 8rem;
+}
+
+#scoreAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: 18rem;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.71);
+    color: rgb(135, 67, 215);
+    width: 40%;
+    padding: 0.5rem;
+}
+
+#score {
+    font-weight: bold;
+}
