@@ -78,12 +78,12 @@ $('#start').click(function() {
 //See the questions in HTML
 function seeQuestion (next) {
     for (let element of Question) {
-    quiz.text(Question[next].question);
-    // if (Question[next].question === 10) {
-    //     alert('fin du quiz')
-    //     console.log('fin du quiz')
-    //     return;
-    // }
+        quiz.text(Question[next].question);
+        // if (Question[next].question === 10) {
+        //     alert('fin du quiz')
+        //     console.log('fin du quiz')
+        //     return;
+        // }
         //Create button for the answers
         for (let i = 0; i < answers.length; i++) {
             answers[i].innerHTML = (Question[index].choicesAnswer[i]);

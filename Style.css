@@ -65,6 +65,9 @@ h1 {
 
 .answers {
     width: 8rem;
+    background: rgba(245, 245, 220, 0.68);
+    border: none;
+    padding: 0.2rem;
 }
 
 #scoreAll {
@@ -82,4 +85,23 @@ h1 {
 
 #score {
     font-weight: bold;
+}
+
+@media screen and (max-width: 340px){
+
+    #text {
+        margin-left: 0;
+    }
+
+    #quiz {
+        margin-left: 3rem;
+    }
+
+    .answers {
+        width: 5rem;
+    }
+
+    #scoreAll {
+        margin-left: 10rem;
+    }
 }
