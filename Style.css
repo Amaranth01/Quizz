@@ -87,6 +87,12 @@ h1 {
     font-weight: bold;
 }
 
+#sum {
+    background-color: rgba(0, 0, 0, 0.71);
+    color: rgb(135, 67, 215);
+
+}
+
 @media screen and (max-width: 340px){
 
     #text {

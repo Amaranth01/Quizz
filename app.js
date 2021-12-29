@@ -58,6 +58,7 @@ let scoreAll = $('#scoreAll');
 let quiz = $('#quiz');
 let point = 0;
 let score = $('#score');
+let sum = document.getElementById('sum');
 
 //hide the elements of questions
 choices.hide();
@@ -79,11 +80,6 @@ $('#start').click(function() {
 function seeQuestion (next) {
     for (let element of Question) {
         quiz.text(Question[next].question);
-        // if (Question[next].question === 10) {
-        //     alert('fin du quiz')
-        //     console.log('fin du quiz')
-        //     return;
-        // }
         //Create button for the answers
         for (let i = 0; i < answers.length; i++) {
             answers[i].innerHTML = (Question[index].choicesAnswer[i]);
@@ -99,6 +95,15 @@ for (let i = 0; i < answers.length; i++) {
         }
         //go to the next question
         index++;
-        seeQuestion(index);
+        if(Question.length < index) {
+            seeQuestion(index);
+        }
+        else {
+            quiz.hide();
+            choices.hide();
+            scoreAll.hide();
+            sum.innerHTML = "Les bonnes réponses étaient : " + Question[index].question + Question[index].answer;
+            console.log("ert")
+        }
     });
 }
