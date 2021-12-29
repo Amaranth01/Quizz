@@ -95,15 +95,25 @@ for (let i = 0; i < answers.length; i++) {
         }
         //go to the next question
         index++;
-        if(Question.length < index) {
+        if( index< Question.length) {
             seeQuestion(index);
         }
         else {
             quiz.hide();
             choices.hide();
             scoreAll.hide();
-            sum.innerHTML = "Les bonnes réponses étaient : " + Question[index].question + Question[index].answer;
-            console.log("ert")
+            sum.innerHTML = "Les bonnes réponses étaient : " + "<br>" +
+            "Comment se nomme le plombier créé par les japonais ? Réponse : Mario" + "<br>" + "<br>" +
+            "Quel est le troisième pokémon que Sacha capture ? Réponse : Roucoups" + "<br>" + "<br>" +
+            "Quel personnage de Walking Dead se bat avec des sabres ? Réponse : Michonne" + "<br>" + "<br>" +
+            "A quelle vitesse doit aller une Delorean pour retourner vers le futur ? Réponse : 88 Miles" + "<br>" + "<br>" +
+            "Dans quel manga et animé les personnages possèdent des queues de singes ? Réponse : Dragon Ball" + "<br>" + "<br>" +
+            "Quelle est la phrase que dit souvent Buzz l'éclair ? Réponse : Vers l'infini et au-delàs !" + "<br>" + "<br>" +
+            "Quels sont les animaux utilisés pour le criquet dans Alice aux pays des marveilles ? Réponse : Un flamand rose et un hérisson"+ "<br>" + "<br>" +
+            "Laquelle de ces conditions ne fait pas partie des conditions initiales pour s'occuper d'un mogwaï ? Réponse : Ne pas le toucher" + "<br>" + "<br>" +
+            "De qui Eivor est-il la réincarnation ? Réponse : D'Odin" + "<br>" + "<br>" +
+            "Dans la mythologie nordique Gandalf est... Réponse : Un nain";
+
         }
     });
 }

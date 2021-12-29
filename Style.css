@@ -39,6 +39,7 @@ h1 {
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.71);
     color: rgb(135, 67, 215);
+    padding: 0.5rem;
 }
 
 #start {
@@ -90,7 +91,8 @@ h1 {
 #sum {
     background-color: rgba(0, 0, 0, 0.71);
     color: rgb(135, 67, 215);
-
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 340px){
@@ -109,5 +111,12 @@ h1 {
 
     #scoreAll {
         margin-left: 10rem;
+    }
+}
+
+@media screen and (min-width: 1920px){
+
+    #text {
+        width: 80%;
     }
 }
