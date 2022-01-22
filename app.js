@@ -65,6 +65,7 @@ choices.hide();
 scoreAll.hide();
 quiz.hide();
 $('#allAnswers').hide();
+$('#sum').hide();
 
 //Start the game
 $('#start').click(function() {
@@ -102,6 +103,8 @@ for (let i = 0; i < answers.length; i++) {
             quiz.hide();
             choices.hide();
             scoreAll.hide();
+            $('#title').hide();
+            $('#sum').show();
             sum.innerHTML = "Les bonnes réponses étaient : " + "<br>" +
             "Comment se nomme le plombier créé par les japonais ? Réponse : Mario" + "<br>" + "<br>" +
             "Quel est le troisième pokémon que Sacha capture ? Réponse : Roucoups" + "<br>" + "<br>" +

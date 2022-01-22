@@ -74,10 +74,10 @@ h1 {
 .answers {
     display: flex;
     justify-content: space-around;
-    width: 12rem;
+    width: 20rem;
+    padding: 0.5rem;
     background: rgba(245, 245, 220, 0.68);
     border: none;
-    padding: 0.2rem;
     font-size: 3rem;
     margin-top: 10rem;
 }
@@ -102,9 +102,11 @@ h1 {
 #sum {
     background-color: rgba(0, 0, 0, 0.71);
     color: rgb(135, 67, 215);
-    font-size: 3rem;
-    margin-top: 1rem;
+    font-size: 2.5rem;
     text-align: center;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
 }
 
 @media screen and (max-width: 1550px){
@@ -116,11 +118,16 @@ h1 {
 @media screen and (max-width: 965px){
 
     h1 {
-       font-size: 3rem;
+       font-size: 2rem;
     }
 
     #text {
         margin-right: 5rem;
+        font-size: 2rem;
+    }
+
+    #start {
+        margin-top: 4rem;
     }
 
     #quiz {
