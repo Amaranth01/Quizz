@@ -71,6 +71,7 @@ $('#sum').hide();
 $('#start').click(function() {
     $('#start').hide();
     $('#text').hide();
+    $('#title').hide();
     quiz.show();
     choices.show();
     scoreAll.show();
@@ -103,7 +104,6 @@ for (let i = 0; i < answers.length; i++) {
             quiz.hide();
             choices.hide();
             scoreAll.hide();
-            $('#title').hide();
             $('#sum').show();
             sum.innerHTML = "Les bonnes réponses étaient : " + "<br>" +
             "Comment se nomme le plombier créé par les japonais ? Réponse : Mario" + "<br>" + "<br>" +

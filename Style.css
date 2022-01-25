@@ -56,8 +56,8 @@ h1 {
 
 #quiz {
     text-align: center;
-    margin-top: 5rem;
-    margin-left: 14vw;
+    margin-top: 10vh;
+    margin-left: 25vw;
     background-color: rgba(0, 0, 0, 0.71);
     color: rgb(135, 67, 215);;
     font-size: 3rem;
@@ -67,8 +67,10 @@ h1 {
 
 #choices {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    margin-top: 5vh;
+    margin-left: 25vw;
 }
 
 .answers {
@@ -80,6 +82,7 @@ h1 {
     border: none;
     font-size: 3rem;
     margin-top: 10rem;
+    margin-left: 2rem;
 }
 
 #scoreAll {
