@@ -12,7 +12,6 @@ body {
     background-image: url("f.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    position: fixed;
 }
 
 #content {
@@ -22,12 +21,15 @@ body {
     align-items: center;
 }
 
-h1 {
-    width: 60%;
-    text-align: center;
-    margin-top: 3rem;
+h1, #text, #quiz, #scoreAll, #sum {
     color: rgb(135, 67, 215);
     background-color: rgba(0, 0, 0, 0.71);
+    text-align: center;
+}
+
+h1 {
+    width: 60%;
+    margin-top: 3rem;
     padding: 0.5rem;
     font-size: 6rem;
 }
@@ -37,10 +39,7 @@ h1 {
     align-items: center;
     margin-top: 10vh;
     margin-left: 6vw;
-    text-align: center;
     font-size: 3rem;
-    background-color: rgba(0, 0, 0, 0.71);
-    color: rgb(135, 67, 215);
     padding: 0.5rem;
     width: 90%;
 }
@@ -55,11 +54,8 @@ h1 {
 }
 
 #quiz {
-    text-align: center;
     margin-top: 10vh;
-    margin-left: 25vw;
-    background-color: rgba(0, 0, 0, 0.71);
-    color: rgb(135, 67, 215);;
+    margin-left: 15vw;
     font-size: 3rem;
     padding: 0.5rem;
     width: 70%;
@@ -70,7 +66,6 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
-    margin-left: 25vw;
 }
 
 .answers {
@@ -92,8 +87,6 @@ h1 {
     margin-top: 10rem;
     margin-left: 40vw;
     font-size: 3rem;
-    background-color: rgba(0, 0, 0, 0.71);
-    color: rgb(135, 67, 215);
     width: 20%;
     padding: 0.5rem;
 }
@@ -103,10 +96,7 @@ h1 {
 }
 
 #sum {
-    background-color: rgba(0, 0, 0, 0.71);
-    color: rgb(135, 67, 215);
     font-size: 2.5rem;
-    text-align: center;
     padding: 1rem;
     margin-top: 2.5rem;
     margin-left: 2rem;
